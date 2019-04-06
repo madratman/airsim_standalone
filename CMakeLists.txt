@@ -24,10 +24,6 @@ include_directories(
   ${AIRSIM_ROOT}/MavLinkCom/common_utils
 )
 
-link_directories(${AIRSIM_ROOT}/build_debug/output/lib/)
-
+# link_directories(${AIRSIM_ROOT}/build_debug/output/lib/)
 add_executable(airsim_standalone "src/main.cpp")
-
-target_link_libraries(${PROJECT_NAME} AirLib)
-target_link_libraries(${PROJECT_NAME} ${RPC_LIB})
-target_link_libraries(${PROJECT_NAME} MavLinkCom)
+target_link_libraries(airsim_standalone AirLib)
