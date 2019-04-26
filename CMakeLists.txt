@@ -25,5 +25,8 @@ include_directories(
 )
 
 # link_directories(${AIRSIM_ROOT}/build_debug/output/lib/)
-add_executable(airsim_standalone "src/main.cpp")
-target_link_libraries(airsim_standalone AirLib)
+add_executable(hello_drone "src/hello_drone.cpp")
+target_link_libraries(hello_drone AirLib)
+
+add_executable(benchmark_simgetimages "src/benchmark_simgetimages.cpp")
+target_link_libraries(benchmark_simgetimages AirLib)
