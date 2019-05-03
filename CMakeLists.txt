@@ -30,3 +30,6 @@ target_link_libraries(hello_drone AirLib)
 
 add_executable(benchmark_simgetimages "src/benchmark_simgetimages.cpp")
 target_link_libraries(benchmark_simgetimages AirLib)
+
+add_executable(get_settings "src/get_settings.cpp")
+target_link_libraries(get_settings AirLib)
