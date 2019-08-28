@@ -85,8 +85,8 @@ bool initializeSettings()
 					if (!(std::isnan(capture_setting.fov_degrees)))
 					{
 						std::cout << "image_type:" << capture_setting.image_type << std::endl;
-						std::cout << "fov_degrees:" << capture_setting.fov_degrees << std::endl;
-						std::cout << "publish_to_ros:" << capture_setting.publish_to_ros << std::endl;
+						std::cout << "fov_degrees:" << capture_setting.fov_degrees << std::endl;						
+						//std::cout << "publish_to_ros:" << capture_setting.publish_to_ros << std::endl;
 					}
 
 				}
